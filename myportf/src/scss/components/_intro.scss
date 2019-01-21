@@ -22,7 +22,6 @@
     }
 
     @include desktop() {
-
         animation-name: signal;
         animation-duration: 3s;
         width: 39.5vw;
@@ -30,8 +29,7 @@
         // border-bottom: 1px black solid;
     }
     
-    .ps { //popisek
-        
+    .ps { //popisek    
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -42,11 +40,9 @@
 
         .first {
             @include highs;
-
         }
 
         .second {
-    
             @include ps;
             a {
                 @include ps;

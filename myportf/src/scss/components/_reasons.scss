@@ -3,13 +3,10 @@
 .reasons {
     border-top: 1px black solid;
     padding: 10% 10%;
-    
-    // width: 100vw;
     @include desktop() {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        // align-items: center;
         width: 100%;
         padding: 5% 5%;
     }
@@ -21,7 +18,6 @@
         @include desktop() {
             margin-bottom: 5%;
             width: 100%;
-            // padding-right: 5%;
         }
     }
 

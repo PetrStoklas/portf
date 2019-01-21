@@ -54,17 +54,26 @@
       font-size: 19px;
       font-weight: 900;
       color: black; }
+      @media (min-width: 950px) {
+        .intro .ps .first {
+          font-size: 24px; } }
     .intro .ps .second {
       font-family: "Open Sans Condensed", sans-serif;
       font-size: 18px;
       font-weight: 500;
       color: black; }
+      @media (min-width: 950px) {
+        .intro .ps .second {
+          font-size: 22px; } }
       .intro .ps .second a {
         font-family: "Open Sans Condensed", sans-serif;
         font-size: 18px;
         font-weight: 500;
         color: black;
         font-weight: bold; }
+        @media (min-width: 950px) {
+          .intro .ps .second a {
+            font-size: 22px; } }
       @media (min-width: 750px) and (max-width: 950px) {
         .intro .ps .second .desk-no-decor {
           font-weight: 300;
@@ -74,11 +83,17 @@
       font-size: 13px;
       font-weight: bold;
       color: black; }
+      @media (min-width: 950px) {
+        .intro .ps .third {
+          font-size: 19px; } }
       .intro .ps .third a {
         font-family: "Open Sans Condensed", sans-serif;
         font-size: 13px;
         font-weight: bold;
         color: black; }
+        @media (min-width: 950px) {
+          .intro .ps .third a {
+            font-size: 19px; } }
 
 nav {
   overflow: auto;
@@ -122,6 +137,9 @@ nav {
     font-weight: 900;
     color: black;
     margin-bottom: 0; }
+    @media (min-width: 950px) {
+      .portfolio h2 {
+        font-size: 26px; } }
     @media (min-width: 950px) {
       .portfolio h2 {
         display: none; } }
@@ -185,6 +203,9 @@ nav {
         color: black;
         font-weight: 700;
         text-decoration: none; }
+        @media (min-width: 950px) {
+          .portfolio ul li a {
+            font-size: 22px; } }
     @media (min-width: 950px) {
       .portfolio ul .one {
         margin-left: auto; } }
@@ -218,6 +239,9 @@ nav {
     margin-bottom: 15%; }
     @media (min-width: 950px) {
       .reasons h2 {
+        font-size: 26px; } }
+    @media (min-width: 950px) {
+      .reasons h2 {
         margin-bottom: 5%;
         width: 100%; } }
   .reasons p {
@@ -225,6 +249,9 @@ nav {
     font-size: 18px;
     font-weight: 500;
     color: black; }
+    @media (min-width: 950px) {
+      .reasons p {
+        font-size: 22px; } }
     @media (min-width: 950px) {
       .reasons p {
         width: 25%; } }
@@ -245,7 +272,8 @@ nav {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      height: 30vh; } }
+      height: 30vh;
+      padding-bottom: 5%; } }
   .contact .left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -260,7 +288,8 @@ nav {
     width: 100%; }
     @media (min-width: 950px) {
       .contact .left {
-        width: 45%; } }
+        width: 45%;
+        height: 100%; } }
     .contact .left .name {
       border: none;
       width: 100%; }
@@ -278,7 +307,8 @@ nav {
     width: 100%; }
     @media (min-width: 950px) {
       .contact .mid {
-        width: 45%; } }
+        width: 45%;
+        height: 100%; } }
     .contact .mid .lng-txt {
       height: 50%;
       border: none;
