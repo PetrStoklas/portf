@@ -1,0 +1,51 @@
+@import 'fontsColors';
+
+
+.contact {
+    width: 80%;
+    height: 15vh;
+    background-color: #0e7cd6;
+    height: 90vh;
+    padding: 0 10%;
+    padding-top: 5%;
+    @include desktop() {
+        display: flex;
+        justify-content: space-between;
+        height: 30vh;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30%;
+        width: 100%;
+        @include desktop() {
+            width: 45%;
+        }
+        .name {
+            border: none;
+            width: 100%;
+        }
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70%;
+        width: 100%;
+        @include desktop() {
+            width: 45%;
+        }
+        .lng-txt {
+            height: 50%;
+            border: none;
+            width: 100%;
+        }
+        .submit-btn {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}

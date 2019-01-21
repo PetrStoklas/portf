@@ -1,0 +1,27 @@
+@import 'components/fontsColors';
+
+
+nav {
+    // position: fixed;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 3vw;
+    border-bottom: 1px black solid;
+    height: 9vh;
+    width: 94vw;
+    background-color: white;
+
+    .logo {
+        width: 10vh;
+        height: 8vh;
+    }
+
+    @include desktop() {
+        position: static;
+    }
+}
+
+
+    

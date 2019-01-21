@@ -1,0 +1,141 @@
+@import 'fontsColors';
+
+
+
+.portfolio {
+    overflow: auto;
+    padding: 0 5%;
+    width: 90%;
+    border-top: 1px black solid;
+    text-align: center;
+
+    @include desktop() {
+        width: 60vw;
+        height: 90vh;
+        padding: 0;
+        border-top: 0;
+        border-left: 1px solid black;
+        // border-bottom: 1px black solid;
+    }
+
+    h2 { //PORTFOLIO HEADING mobile only
+        @include hs;
+        margin-bottom: 0;
+        @include desktop() {
+            display: none;
+        }
+    }
+
+    .arrow { //Mobile only ARROW
+        width: 5%;
+        @include desktop() {
+            display: none;
+
+        }
+
+    }
+
+    ul {
+        padding: 0 10%; 
+        list-style: none;
+        margin-top: 0;
+
+        li { 
+            position: relative;
+            margin-bottom: 15%;
+            padding: 10% 5%;
+            box-shadow: -4px 10px 78px -20px rgba(0,0,0,0.75);
+
+            @include desktop() {
+                box-shadow: none;
+                width: 50%;
+                height: 30%;
+                margin: 10% 0;
+                padding: 0;
+
+            }
+            
+            .web-cells { //PICTURES FOR MOBILE VERSION
+                width: 100%;
+                filter: grayscale(80%);
+
+                @include desktop() {
+                    display: none;
+                }
+            }
+
+            .web-desks { //PICTURES FOR DESKTOP
+                display: none;
+
+                @include desktop() {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    filter: grayscale(80%);
+                    opacity: 1;
+                    transition: opacity .3s;
+                    &:hover {
+                        opacity: 0.1;
+                    }
+                }
+            }
+
+            .overlay {
+                @include desktop() {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0e7cd6;
+                    color: white;
+                }
+            }
+
+            a {
+                @include ps;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+
+        // .more-port {  // MORE PORTFOLIO BUTTON
+        //     // text-align: right;
+        //     background-color: rgb(100, 0, 0);
+        //     height: 
+           
+        //     a {
+        //         // @include as;
+        //         color: white;
+        //     }
+
+        //     @include desktop() {
+
+        //     }
+        // }
+
+
+        .one { // FIRST LIs 
+            @include desktop() {
+                margin-left: auto;
+            }
+        }
+        .two {
+            @include desktop() {
+                margin-right: auto;   
+            }
+        }
+        .tri {
+            @include desktop() {
+                margin-left: auto;   
+            }
+
+        }    
+
+    }
+
+}
+
+
+
+

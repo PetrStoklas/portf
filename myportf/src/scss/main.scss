@@ -1,0 +1,24 @@
+@import 'components/intro';
+@import 'components/nav';
+@import 'components/portfolio';
+@import 'components/jumbo';
+@import 'components/reasons';
+@import 'components/contacts';
+// @import 'components/fontsColors';
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    @include desktop() {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

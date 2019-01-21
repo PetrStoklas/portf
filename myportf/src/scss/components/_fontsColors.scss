@@ -1,0 +1,68 @@
+
+// COLORS
+$nav-color: white;
+$portfolio-color: white;
+$skills-color: blue;
+$contacts-color: black;
+
+$txt-color: black;
+$a-color: black;
+
+//FONTS
+
+//font-family: 'Open Sans Condensed', sans-serif;
+//font-family: 'Josefin Slab', serif;
+
+$a: 'Courier New', serif;
+$b: 'Open Sans Condensed', sans-serif;
+// $small: 'Open Sans Condensed', sans-serif;
+
+//font-sizes
+$huge: 21px;
+$big: 19px;
+$med: 18px;
+$smll: 13px;
+
+//font mixins
+@mixin highs() {
+    font-family: $a;
+    font-size: $big;
+    font-weight: 900;
+    color: $txt-color;
+}
+
+@mixin hs() {
+    font-family: $b;
+    font-size: $huge;
+    font-weight: 900;
+    color: $txt-color;
+}
+
+@mixin ps() {
+    font-family: $b;
+    font-size: $med;
+    font-weight: 500;
+    color: $txt-color;
+}
+
+@mixin as() {
+    font-family: $b; 
+    font-size: $smll;
+    font-weight: bold;
+    color: $txt-color;
+}
+//size mixins
+
+@mixin tablet { //J AK TO VYPADA NA TABLETU
+    @media (min-width: 750px) and (max-width: 950px) {
+        @content;
+    }
+}
+
+@mixin desktop { // JAK TO VYPADA NA DESKTOPU
+    @media (min-width: 950px) {
+        @content;
+    }
+}
+
+

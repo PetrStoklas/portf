@@ -1,0 +1,70 @@
+@import 'fontsColors';
+
+@keyframes signal {
+    from {background-color: #0e7cd6;}
+    to {background-color: white;}
+    // to {background-color: white;}
+}
+
+ 
+.intro {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    
+
+    @include tablet() {
+        padding-left: 10%;
+        padding-right:10%;
+    }
+
+    @include desktop() {
+
+        animation-name: signal;
+        animation-duration: 3s;
+        width: 39.5vw;
+        height: 90vh;
+        // border-bottom: 1px black solid;
+    }
+    
+    .ps { //popisek
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        height: 90%;
+        width: 80%;
+        padding: 0 10%;
+
+        .first {
+            @include highs;
+
+        }
+
+        .second {
+    
+            @include ps;
+            a {
+                @include ps;
+                font-weight: bold;
+            }
+            .desk-no-decor {
+                @include tablet() {
+                    font-weight: 300;
+                    text-decoration: none;
+                }
+            }
+        }
+        .third {
+            @include as;
+            a {
+                @include as;
+            }
+
+        }
+    }
+}
