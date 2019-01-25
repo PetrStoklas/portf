@@ -1,21 +1,17 @@
 @import 'fontsColors';
 
-
-
 .portfolio {
     overflow: auto;
-    padding: 0 5%;
-    width: 90%;
-    border-top: 1px black solid;
+    width: 100%;
     text-align: center;
+    padding: 10% 0 0 0;
 
     @include desktop() {
-        width: 60vw;
-        height: 90vh;
+        width: 47.5%;
+        height: 97vh;
         padding: 0;
-        border-top: 0;
-        border-left: 1px solid black;
-        // border-bottom: 1px black solid;
+        margin-top: 3vh;
+        background-color: #F8F8F8;
     }
 
     h2 { //PORTFOLIO HEADING mobile only
@@ -27,31 +23,36 @@
     }
 
     .arrow { //Mobile only ARROW
-        width: 5%;
+        width: 2%;
         @include desktop() {
             display: none;
-
         }
-
     }
 
     ul {
-        padding: 0 10%; 
+        // padding: 0 10%; 
         list-style: none;
-        margin-top: 0;
+        padding: 5% 0 0 0;
 
         li { 
             position: relative;
-            margin-bottom: 15%;
-            padding: 10% 5%;
+            width: 85%;
+            margin: 0 auto 15% auto;
+            padding: 10% 0;
             box-shadow: -4px 10px 78px -20px rgba(0,0,0,0.75);
+
+            @include tablet() {
+                width: 80%;
+            }
 
             @include desktop() {
                 box-shadow: none;
-                width: 50%;
+                width: 70%;
                 height: 30%;
-                margin: 10% 0;
+                margin: 0 auto;
+                margin-bottom: 15%;
                 padding: 0;
+                
 
             }
             
@@ -88,6 +89,7 @@
                     width: 100%;
                     height: 100%;
                     background-color: #0e7cd6;
+                    // background-color: black;
                     color: white;
                 }
             }
@@ -115,22 +117,22 @@
         // }
 
 
-        .one { // FIRST LIs 
-            @include desktop() {
-                margin-left: auto;
-            }
-        }
-        .two {
-            @include desktop() {
-                margin-right: auto;   
-            }
-        }
-        .tri {
-            @include desktop() {
-                margin-left: auto;   
-            }
+        // .one { // FIRST LIs 
+        //     @include desktop() {
+        //         margin-left: auto;
+        //     }
+        // }
+        // .two {
+        //     @include desktop() {
+        //         margin-left: auto;   
+        //     }
+        // }
+        // .tri {
+        //     @include desktop() {
+        //         margin-left: auto;   
+        //     }
 
-        }    
+        // }    
 
     }
 

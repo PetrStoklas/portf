@@ -7,10 +7,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vh 3vw;
-    border-bottom: 1px black solid;
+    padding: 1vh 3vw;
     height: 9vh;
-    width: 94vw;
     background-color: white;
 
     .logo {
@@ -18,8 +16,16 @@ nav {
         height: 8vh;
     }
 
+    @include tablet() {
+        width: 80%;
+        margin: auto;
+        padding: 1vh 0;
+    }
+
     @include desktop() {
-        position: static;
+        width: 100%;
+        margin: auto;
+        // position: static;
     }
 }
 

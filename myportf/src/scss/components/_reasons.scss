@@ -1,8 +1,11 @@
 @import 'fontsColors';
 
 .reasons {
-    border-top: 1px black solid;
-    padding: 10% 10%;
+    padding: 10% 0;
+    @include tablet() {
+        width: 80%;
+        margin: auto;
+    }
     @include desktop() {
         display: flex;
         justify-content: space-around;
@@ -12,19 +15,29 @@
     }
 
     h2 {
+        width: 85%;
         text-align: center;
         @include hs;
-        margin-bottom: 15%;
+        margin: auto;
+        margin-bottom: 5% ;
         @include desktop() {
-            margin-bottom: 5%;
+            // margin-bottom: 5%;
             width: 100%;
         }
     }
 
     p {
+        margin: 0 auto 5% auto;
+        width: 80%;
         @include ps;
+        @include tablet() {
+            text-align: center;
+        }
         @include desktop() {
-            width: 25%;
+            // border-top: black solid 1px;
+            // border-left: lightgrey solid 1px;
+            // padding-left: 1%;
+            width: 22%;
         }
     }
 }

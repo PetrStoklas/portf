@@ -2,13 +2,13 @@
   from {
     background-color: #0e7cd6; }
   to {
-    background-color: white; } }
+    background-color: #F8F8F8; } }
 
 @keyframes signal {
   from {
     background-color: #0e7cd6; }
   to {
-    background-color: white; } }
+    background-color: #F8F8F8; } }
 
 .intro {
   overflow: auto;
@@ -23,19 +23,21 @@
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  height: 90vh; }
-  @media (min-width: 750px) and (max-width: 950px) {
+  height: 90vh;
+  background-color: #F8F8F8; }
+  @media (min-width: 750px) and (max-width: 1099px) {
     .intro {
-      padding-left: 10%;
-      padding-right: 10%; } }
-  @media (min-width: 950px) {
+      width: 80%;
+      margin: auto;
+      padding: 0 10%; } }
+  @media (min-width: 1100px) {
     .intro {
       -webkit-animation-name: signal;
       animation-name: signal;
       -webkit-animation-duration: 3s;
       animation-duration: 3s;
-      width: 39.5vw;
-      height: 90vh; } }
+      width: 100%;
+      height: 91vh; } }
   .intro .ps {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -47,34 +49,43 @@
     -ms-flex-pack: distribute;
     justify-content: space-around;
     height: 90%;
-    width: 80%;
-    padding: 0 10%; }
+    width: 85%;
+    margin: auto; }
     .intro .ps .first {
       font-family: "Courier New", serif;
       font-size: 19px;
       font-weight: 900;
       color: black; }
-      @media (min-width: 950px) {
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .intro .ps .first {
+          font-size: 21px; } }
+      @media (min-width: 1500px) {
         .intro .ps .first {
           font-size: 24px; } }
     .intro .ps .second {
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 18px;
       font-weight: 500;
       color: black; }
-      @media (min-width: 950px) {
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .intro .ps .second {
+          font-size: 20px; } }
+      @media (min-width: 1500px) {
         .intro .ps .second {
           font-size: 22px; } }
       .intro .ps .second a {
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 18px;
         font-weight: 500;
         color: black;
         font-weight: bold; }
-        @media (min-width: 950px) {
+        @media (min-width: 750px) and (max-width: 1099px) {
+          .intro .ps .second a {
+            font-size: 20px; } }
+        @media (min-width: 1500px) {
           .intro .ps .second a {
             font-size: 22px; } }
-      @media (min-width: 750px) and (max-width: 950px) {
+      @media (min-width: 1100px) {
         .intro .ps .second .desk-no-decor {
           font-weight: 300;
           text-decoration: none; } }
@@ -83,7 +94,10 @@
       font-size: 13px;
       font-weight: bold;
       color: black; }
-      @media (min-width: 950px) {
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .intro .ps .third {
+          font-size: 15px; } }
+      @media (min-width: 1500px) {
         .intro .ps .third {
           font-size: 19px; } }
       .intro .ps .third a {
@@ -91,7 +105,10 @@
         font-size: 13px;
         font-weight: bold;
         color: black; }
-        @media (min-width: 950px) {
+        @media (min-width: 750px) and (max-width: 1099px) {
+          .intro .ps .third a {
+            font-size: 15px; } }
+        @media (min-width: 1500px) {
           .intro .ps .third a {
             font-size: 19px; } }
 
@@ -106,76 +123,86 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 2vh 3vw;
-  border-bottom: 1px black solid;
+  padding: 1vh 3vw;
   height: 9vh;
-  width: 94vw;
   background-color: white; }
   nav .logo {
     width: 10vh;
     height: 8vh; }
-  @media (min-width: 950px) {
+  @media (min-width: 750px) and (max-width: 1099px) {
     nav {
-      position: static; } }
+      width: 80%;
+      margin: auto;
+      padding: 1vh 0; } }
+  @media (min-width: 1100px) {
+    nav {
+      width: 100%;
+      margin: auto; } }
 
 .portfolio {
   overflow: auto;
-  padding: 0 5%;
-  width: 90%;
-  border-top: 1px black solid;
-  text-align: center; }
-  @media (min-width: 950px) {
+  width: 100%;
+  text-align: center;
+  padding: 10% 0 0 0; }
+  @media (min-width: 1100px) {
     .portfolio {
-      width: 60vw;
-      height: 90vh;
+      width: 47.5%;
+      height: 97vh;
       padding: 0;
-      border-top: 0;
-      border-left: 1px solid black; } }
+      margin-top: 3vh;
+      background-color: #F8F8F8; } }
   .portfolio h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 21px;
     font-weight: 900;
     color: black;
     margin-bottom: 0; }
-    @media (min-width: 950px) {
+    @media (min-width: 750px) and (max-width: 1099px) {
+      .portfolio h2 {
+        font-size: 25px; } }
+    @media (min-width: 1500px) {
       .portfolio h2 {
         font-size: 26px; } }
-    @media (min-width: 950px) {
+    @media (min-width: 1100px) {
       .portfolio h2 {
         display: none; } }
   .portfolio .arrow {
-    width: 5%; }
-    @media (min-width: 950px) {
+    width: 2%; }
+    @media (min-width: 1100px) {
       .portfolio .arrow {
         display: none; } }
   .portfolio ul {
-    padding: 0 10%;
     list-style: none;
-    margin-top: 0; }
+    padding: 5% 0 0 0; }
     .portfolio ul li {
       position: relative;
-      margin-bottom: 15%;
-      padding: 10% 5%;
+      width: 85%;
+      margin: 0 auto 15% auto;
+      padding: 10% 0;
       -webkit-box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.75);
       box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.75); }
-      @media (min-width: 950px) {
+      @media (min-width: 750px) and (max-width: 1099px) {
+        .portfolio ul li {
+          width: 80%; } }
+      @media (min-width: 1100px) {
         .portfolio ul li {
           -webkit-box-shadow: none;
           box-shadow: none;
-          width: 50%;
+          width: 70%;
           height: 30%;
-          margin: 10% 0;
+          margin: 0 auto;
+          margin-bottom: 15%;
           padding: 0; } }
       .portfolio ul li .web-cells {
         width: 100%;
         -webkit-filter: grayscale(80%);
         filter: grayscale(80%); }
-        @media (min-width: 950px) {
+        @media (min-width: 1100px) {
           .portfolio ul li .web-cells {
             display: none; } }
       .portfolio ul li .web-desks {
         display: none; }
-        @media (min-width: 950px) {
+        @media (min-width: 1100px) {
           .portfolio ul li .web-desks {
             display: block;
             width: 100%;
@@ -187,7 +214,7 @@ nav {
             transition: opacity .3s; }
             .portfolio ul li .web-desks:hover {
               opacity: 0.1; } }
-      @media (min-width: 950px) {
+      @media (min-width: 1100px) {
         .portfolio ul li .overlay {
           position: absolute;
           top: 0;
@@ -197,29 +224,26 @@ nav {
           background-color: #0e7cd6;
           color: white; } }
       .portfolio ul li a {
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 18px;
         font-weight: 500;
         color: black;
         font-weight: 700;
         text-decoration: none; }
-        @media (min-width: 950px) {
+        @media (min-width: 750px) and (max-width: 1099px) {
+          .portfolio ul li a {
+            font-size: 20px; } }
+        @media (min-width: 1500px) {
           .portfolio ul li a {
             font-size: 22px; } }
-    @media (min-width: 950px) {
-      .portfolio ul .one {
-        margin-left: auto; } }
-    @media (min-width: 950px) {
-      .portfolio ul .two {
-        margin-right: auto; } }
-    @media (min-width: 950px) {
-      .portfolio ul .tri {
-        margin-left: auto; } }
 
 .reasons {
-  border-top: 1px black solid;
-  padding: 10% 10%; }
-  @media (min-width: 950px) {
+  padding: 10% 0; }
+  @media (min-width: 750px) and (max-width: 1099px) {
+    .reasons {
+      width: 80%;
+      margin: auto; } }
+  @media (min-width: 1100px) {
     .reasons {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -231,40 +255,56 @@ nav {
       width: 100%;
       padding: 5% 5%; } }
   .reasons h2 {
+    width: 85%;
     text-align: center;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 21px;
     font-weight: 900;
     color: black;
-    margin-bottom: 15%; }
-    @media (min-width: 950px) {
+    margin: auto;
+    margin-bottom: 5%; }
+    @media (min-width: 750px) and (max-width: 1099px) {
+      .reasons h2 {
+        font-size: 25px; } }
+    @media (min-width: 1500px) {
       .reasons h2 {
         font-size: 26px; } }
-    @media (min-width: 950px) {
+    @media (min-width: 1100px) {
       .reasons h2 {
-        margin-bottom: 5%;
         width: 100%; } }
   .reasons p {
-    font-family: "Open Sans Condensed", sans-serif;
+    margin: 0 auto 5% auto;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: black; }
-    @media (min-width: 950px) {
+    @media (min-width: 750px) and (max-width: 1099px) {
+      .reasons p {
+        font-size: 20px; } }
+    @media (min-width: 1500px) {
       .reasons p {
         font-size: 22px; } }
-    @media (min-width: 950px) {
+    @media (min-width: 750px) and (max-width: 1099px) {
       .reasons p {
-        width: 25%; } }
+        text-align: center; } }
+    @media (min-width: 1100px) {
+      .reasons p {
+        width: 22%; } }
 
 /* SKILLS KONEC */
 .contact {
-  width: 80%;
+  width: 100%;
   height: 15vh;
   background-color: #0e7cd6;
-  height: 90vh;
-  padding: 0 10%;
-  padding-top: 5%; }
-  @media (min-width: 950px) {
+  height: 95vh;
+  padding-top: 5%;
+  font-family: "Montserrat", sans-serif; }
+  @media (min-width: 750px) and (max-width: 1099px) {
+    .contact {
+      width: 80%;
+      margin: auto; } }
+  @media (min-width: 1100px) {
     .contact {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -272,8 +312,12 @@ nav {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      height: 30vh;
-      padding-bottom: 5%; } }
+      height: 50vh;
+      padding: 5%; } }
+  .contact .logo-bottom {
+    display: block;
+    width: 30%;
+    margin: 3vh auto; }
   .contact .left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,15 +328,23 @@ nav {
     flex-direction: column;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    height: 30%;
-    width: 100%; }
-    @media (min-width: 950px) {
+    height: 20%;
+    width: 85%;
+    margin: 5vh auto; }
+    @media (min-width: 1100px) {
       .contact .left {
-        width: 45%;
-        height: 100%; } }
+        width: 30%;
+        height: 100%;
+        margin: 0; } }
     .contact .left .name {
       border: none;
-      width: 100%; }
+      border-radius: 8px 8px;
+      width: 70%;
+      margin: auto;
+      font-family: "Montserrat", sans-serif; }
+      @media (min-width: 1100px) {
+        .contact .left .name {
+          height: 10%; } }
   .contact .mid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -301,38 +353,55 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    height: 70%;
-    width: 100%; }
-    @media (min-width: 950px) {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 50%;
+    width: 85%;
+    margin: auto; }
+    @media (min-width: 1100px) {
       .contact .mid {
-        width: 45%;
-        height: 100%; } }
+        width: 30%;
+        height: 100%;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; } }
     .contact .mid .lng-txt {
       height: 50%;
       border: none;
-      width: 100%; }
+      border-radius: 8px 8px;
+      width: 100%;
+      font-family: "Montserrat", sans-serif; }
     .contact .mid .submit-btn {
-      width: 80%;
-      margin: 0 auto; }
+      width: 70%;
+      height: 30px;
+      margin: 0 auto 7vh auto;
+      border-radius: 10px 10px;
+      border: 1px black solid;
+      background-color: #0e7cd6;
+      font-family: "Montserrat", sans-serif; }
+      @media (min-width: 1100px) {
+        .contact .mid .submit-btn {
+          margin: 0 auto; } }
 
-html {
+* {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
+  box-sizing: border-box;
   width: 100%;
   margin: 0; }
 
-.container {
-  margin: 0; }
-  @media (min-width: 950px) {
-    .container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; } }
+@media (min-width: 1100px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%; } }
+
+@media (min-width: 1100px) {
+  .container .navintro {
+    width: 47.5%; } }
 
 /*# sourceMappingURL=main.css.map */

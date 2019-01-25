@@ -2,53 +2,94 @@
 
 
 .contact {
-    width: 80%;
+    width: 100%;
     height: 15vh;
     background-color: #0e7cd6;
-    height: 90vh;
-    padding: 0 10%;
+    // background-image: linear-gradient(white, #0e7cd6, #0e7cd6);
+    height: 95vh;
     padding-top: 5%;
+    font-family: $c;
+    @include tablet() {
+        width: 80%;
+        margin: auto;
+    }
     @include desktop() {
         display: flex;
         justify-content: space-between;
-        height: 30vh;
-        padding-bottom: 5%;
+        height: 50vh;
+        padding: 5%;
+    }
+    .logo-bottom {
+        display: block;
+        width: 30%;
+        margin: 3vh auto;
+        @include desktop() {
+            
+        }
     }
 
-    .left {
+    .left { //first, second, email input
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 30%;
-        width: 100%;
+        height: 20%;
+        width: 85%;
+        margin: 5vh auto;
+        // @include tablet() {
+        //     padding: 0 10%;
+        //     border-left: 1px black solid;
+        //     border-right: 1px black solid;
+        // }
         @include desktop() {
-            width: 45%;
+            width: 30%;
             height: 100%;
+            margin: 0;
         }
         .name {
             border: none;
-            width: 100%;
+            border-radius: 8px 8px;
+            width: 70%;
+            margin: auto;
+            font-family: $c;
+            @include desktop() {
+                height: 10%;
+                // margin: auto;
+            }
         }
     }
 
     .mid {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 70%;
-        width: 100%;
+        justify-content: space-between;
+        height: 50%;
+        width: 85%;
+        margin: auto;
         @include desktop() {
-            width: 45%;
+            width: 30%;
             height: 100%;
+            justify-content: space-around;
+
         }
         .lng-txt {
             height: 50%;
             border: none;
+            border-radius: 8px 8px;
             width: 100%;
+            font-family: $c;
         }
         .submit-btn {
-            width: 80%;
-            margin: 0 auto;
+            width: 70%;
+            height: 30px;
+            margin: 0 auto 7vh auto;
+            border-radius: 10px 10px;
+            border: 1px black solid;
+            // color: white;
+            background-color: #0e7cd6;
+            font-family: $c;
+            @include desktop() {
+                margin: 0 auto;
+            }
         }
     }
 }

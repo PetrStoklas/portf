@@ -2,22 +2,28 @@
 //size mixins
 
 @mixin tablet { //J AK TO VYPADA NA TABLETU
-    @media (min-width: 750px) and (max-width: 950px) {
+    @media (min-width: 750px) and (max-width: 1099px) {
         @content;
     }
 }
 
 @mixin desktop { // JAK TO VYPADA NA DESKTOPU
-    @media (min-width: 950px) {
+    @media (min-width: 1100px) {
         @content;
     }
 }
 
 @mixin xlarge {
-    @media (min-width: 950px) {
+    @media (min-width: 1500px) {
         @content;
     }
 }
+
+// @mixin desktop {
+//     @media (min-width: 950px) {
+//         @content;
+//     }
+// }
 // COLORS
 $nav-color: white;
 $portfolio-color: white;
@@ -34,6 +40,9 @@ $a-color: black;
 
 $a: 'Courier New', serif;
 $b: 'Open Sans Condensed', sans-serif;
+$c: 'Montserrat', sans-serif;
+
+
 // $small: 'Open Sans Condensed', sans-serif;
 
 //font-sizes
@@ -48,6 +57,9 @@ $smll: 13px;
     font-size: 19px;
     font-weight: 900;
     color: $txt-color;
+    @include tablet () {
+        font-size: 21px;
+    }
     @include xlarge {
         font-size: 24px;
     }
@@ -58,16 +70,22 @@ $smll: 13px;
     font-size: 21px;
     font-weight: 900;
     color: $txt-color;
+    @include tablet () {
+        font-size: 25px;
+    }
     @include xlarge {
         font-size: 26px;
     }
 }
 
 @mixin ps() {
-    font-family: $b;
+    font-family: $c;
     font-size: 18px;
     font-weight: 500;
     color: $txt-color;
+    @include tablet () {
+        font-size: 20px;
+    }
     @include xlarge {
         font-size: 22px;
     }
@@ -78,6 +96,9 @@ $smll: 13px;
     font-size: 13px;
     font-weight: bold;
     color: $txt-color;
+    @include tablet () {
+        font-size: 15px;
+    }
     @include xlarge {
         font-size: 19px;
     }
