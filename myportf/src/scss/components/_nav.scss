@@ -1,8 +1,19 @@
 @import 'components/fontsColors';
 
 
+@keyframes swim {
+    from {transform: scaleX(1)}
+    50% {transform: scaleX(-0.7)}
+    to {transform: scaleX(1)}
+}
+
+@keyframes shine {
+    from {}
+    50% {}
+    to {}
+}
+
 nav {
-    // position: fixed;
     overflow: auto;
     display: flex;
     justify-content: space-between;
@@ -11,10 +22,35 @@ nav {
     height: 9vh;
     background-color: white;
 
-    .logo {
-        width: 10vh;
-        height: 8vh;
-    }
+    a {
+        width: 9vh;
+        //SHARK
+        path {
+            stroke: black;
+            fill: white;
+        }
+        #backfin {
+            animation: swim 2s ease-in-out;
+            animation-iteration-count: 2;
+            transform-origin: 40% 50%;
+        }
+        #backfin.backfinswing {
+            animation: swim 3s infinite;
+            transform-origin: 40% 50%;
+        }
+    } 
+    // a:hover {
+    //     path {
+    //         // stroke: blue;
+                
+    //     }
+        
+            
+    //         // transition-timing-function: ease-in-out;
+    //         // fill: lightgray;
+    //         // stroke: none;
+    //     }
+    // }
 
     @include tablet() {
         width: 80%;

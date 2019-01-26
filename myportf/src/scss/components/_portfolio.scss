@@ -1,5 +1,18 @@
 @import 'fontsColors';
 
+@keyframes slideleft {
+    from {left: 30%; animation-timing-function: ease-in;}
+    30% {left: 0; animation-timing-function: ease-out;}
+    50% {left: 10%; animation-timing-function: ease-in;}
+    75% {left: 0; animation-timing-function: ease-out;}
+    88% {left: 3%; animation-timing-function: ease-in;}
+    to {left: 0; animation-timing-function: ease-out;}
+}
+// 100 - 30
+// 40 - 15
+// 
+//
+//
 .portfolio {
     overflow: auto;
     width: 100%;
@@ -7,9 +20,9 @@
     padding: 10% 0 0 0;
 
     @include desktop() {
-        width: 47.5%;
+        width: 45%;
         height: 97vh;
-        padding: 0;
+        padding: 2vh 0 0 0;
         margin-top: 3vh;
         background-color: #F8F8F8;
     }
@@ -39,25 +52,26 @@
             width: 85%;
             margin: 0 auto 15% auto;
             padding: 10% 0;
-            box-shadow: -4px 10px 78px -20px rgba(0,0,0,0.75);
+            box-shadow: -4px 10px 78px -20px rgba(0,0,0,0.45);
 
             @include tablet() {
                 width: 80%;
             }
 
             @include desktop() {
+                
                 box-shadow: none;
-                width: 70%;
+                width: 50%;
                 height: 30%;
                 margin: 0 auto;
-                margin-bottom: 15%;
+                margin-bottom: 1%;
                 padding: 0;
                 
 
             }
             
             .web-cells { //PICTURES FOR MOBILE VERSION
-                width: 100%;
+                width: 90%;
                 filter: grayscale(80%);
 
                 @include desktop() {
@@ -117,22 +131,22 @@
         // }
 
 
-        // .one { // FIRST LIs 
-        //     @include desktop() {
-        //         margin-left: auto;
-        //     }
-        // }
-        // .two {
-        //     @include desktop() {
-        //         margin-left: auto;   
-        //     }
-        // }
-        // .tri {
-        //     @include desktop() {
-        //         margin-left: auto;   
-        //     }
+        .one { // FIRST LIs 
+            @include desktop() {
+                animation: slideleft 3s;
+            }
+        }
+        .two {
+            @include desktop() {
+                animation: slideleft 4s;
+            }
+        }
+        .tri {
+            @include desktop() {
+                animation: slideleft 3.5s; 
+            }
 
-        // }    
+        }    
 
     }
 

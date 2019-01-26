@@ -1,11 +1,15 @@
 @-webkit-keyframes signal {
   from {
+    background-color: #F8F8F8; }
+  50% {
     background-color: #0e7cd6; }
   to {
     background-color: #F8F8F8; } }
 
 @keyframes signal {
   from {
+    background-color: #F8F8F8; }
+  50% {
     background-color: #0e7cd6; }
   to {
     background-color: #F8F8F8; } }
@@ -32,10 +36,10 @@
       padding: 0 10%; } }
   @media (min-width: 1100px) {
     .intro {
-      -webkit-animation-name: signal;
-      animation-name: signal;
-      -webkit-animation-duration: 3s;
-      animation-duration: 3s;
+      -webkit-animation: signal 2s;
+      animation: signal 2s;
+      -webkit-animation-delay: 1.5s;
+      animation-delay: 1.5s;
       width: 100%;
       height: 91vh; } }
   .intro .ps {
@@ -112,6 +116,38 @@
           .intro .ps .third a {
             font-size: 19px; } }
 
+@-webkit-keyframes swim {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(-0.7);
+    transform: scaleX(-0.7); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+@keyframes swim {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(-0.7);
+    transform: scaleX(-0.7); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+@-webkit-keyframes shine {
+  from { }
+  50% { }
+  to { } }
+
+@keyframes shine {
+  from { }
+  50% { }
+  to { } }
+
 nav {
   overflow: auto;
   display: -webkit-box;
@@ -126,9 +162,23 @@ nav {
   padding: 1vh 3vw;
   height: 9vh;
   background-color: white; }
-  nav .logo {
-    width: 10vh;
-    height: 8vh; }
+  nav a {
+    width: 9vh; }
+    nav a path {
+      stroke: black;
+      fill: white; }
+    nav a #backfin {
+      -webkit-animation: swim 2s ease-in-out;
+      animation: swim 2s ease-in-out;
+      -webkit-animation-iteration-count: 2;
+      animation-iteration-count: 2;
+      -webkit-transform-origin: 40% 50%;
+      transform-origin: 40% 50%; }
+    nav a #backfin.backfinswing {
+      -webkit-animation: swim 3s infinite;
+      animation: swim 3s infinite;
+      -webkit-transform-origin: 40% 50%;
+      transform-origin: 40% 50%; }
   @media (min-width: 750px) and (max-width: 1099px) {
     nav {
       width: 80%;
@@ -139,6 +189,58 @@ nav {
       width: 100%;
       margin: auto; } }
 
+@-webkit-keyframes slideleft {
+  from {
+    left: 30%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  30% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    left: 10%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  75% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  88% {
+    left: 3%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
+
+@keyframes slideleft {
+  from {
+    left: 30%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  30% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    left: 10%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  75% {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  88% {
+    left: 3%;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    left: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; } }
+
 .portfolio {
   overflow: auto;
   width: 100%;
@@ -146,9 +248,9 @@ nav {
   padding: 10% 0 0 0; }
   @media (min-width: 1100px) {
     .portfolio {
-      width: 47.5%;
+      width: 45%;
       height: 97vh;
-      padding: 0;
+      padding: 2vh 0 0 0;
       margin-top: 3vh;
       background-color: #F8F8F8; } }
   .portfolio h2 {
@@ -179,8 +281,8 @@ nav {
       width: 85%;
       margin: 0 auto 15% auto;
       padding: 10% 0;
-      -webkit-box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.75);
-      box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.75); }
+      -webkit-box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.45);
+      box-shadow: -4px 10px 78px -20px rgba(0, 0, 0, 0.45); }
       @media (min-width: 750px) and (max-width: 1099px) {
         .portfolio ul li {
           width: 80%; } }
@@ -188,13 +290,13 @@ nav {
         .portfolio ul li {
           -webkit-box-shadow: none;
           box-shadow: none;
-          width: 70%;
+          width: 50%;
           height: 30%;
           margin: 0 auto;
-          margin-bottom: 15%;
+          margin-bottom: 1%;
           padding: 0; } }
       .portfolio ul li .web-cells {
-        width: 100%;
+        width: 90%;
         -webkit-filter: grayscale(80%);
         filter: grayscale(80%); }
         @media (min-width: 1100px) {
@@ -236,6 +338,18 @@ nav {
         @media (min-width: 1500px) {
           .portfolio ul li a {
             font-size: 22px; } }
+    @media (min-width: 1100px) {
+      .portfolio ul .one {
+        -webkit-animation: slideleft 3s;
+        animation: slideleft 3s; } }
+    @media (min-width: 1100px) {
+      .portfolio ul .two {
+        -webkit-animation: slideleft 4s;
+        animation: slideleft 4s; } }
+    @media (min-width: 1100px) {
+      .portfolio ul .tri {
+        -webkit-animation: slideleft 3.5s;
+        animation: slideleft 3.5s; } }
 
 .reasons {
   padding: 10% 0; }
@@ -293,11 +407,40 @@ nav {
         width: 22%; } }
 
 /* SKILLS KONEC */
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgrey;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: lightgrey; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: lightgrey; }
+
 .contact {
   width: 100%;
   height: 15vh;
   background-color: #0e7cd6;
-  height: 95vh;
+  height: 91vh;
   padding-top: 5%;
   font-family: "Montserrat", sans-serif; }
   @media (min-width: 750px) and (max-width: 1099px) {
@@ -314,10 +457,6 @@ nav {
       justify-content: space-between;
       height: 50vh;
       padding: 5%; } }
-  .contact .logo-bottom {
-    display: block;
-    width: 30%;
-    margin: 3vh auto; }
   .contact .left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -341,9 +480,12 @@ nav {
       border-radius: 8px 8px;
       width: 70%;
       margin: auto;
-      font-family: "Montserrat", sans-serif; }
+      background-color: #015499;
+      font-family: "Montserrat", sans-serif;
+      color: lightgrey; }
       @media (min-width: 1100px) {
         .contact .left .name {
+          width: 100%;
           height: 10%; } }
   .contact .mid {
     display: -webkit-box;
@@ -353,10 +495,9 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    height: 50%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 40%;
     width: 85%;
     margin: auto; }
     @media (min-width: 1100px) {
@@ -369,21 +510,33 @@ nav {
       height: 50%;
       border: none;
       border-radius: 8px 8px;
+      background-color: #015499;
       width: 100%;
-      font-family: "Montserrat", sans-serif; }
+      padding: 7px;
+      font-family: "Montserrat", sans-serif;
+      color: lightgrey; }
     .contact .mid .submit-btn {
       width: 70%;
       height: 30px;
-      margin: 0 auto 7vh auto;
+      margin: 0 auto 0 auto;
       border-radius: 10px 10px;
-      border: 1px black solid;
+      border: 2px black solid;
       background-color: #0e7cd6;
       font-family: "Montserrat", sans-serif; }
       @media (min-width: 1100px) {
         .contact .mid .submit-btn {
+          font-weight: 700;
           margin: 0 auto; } }
+  .contact .logo-bottom {
+    display: block;
+    width: 30%;
+    margin: 0 auto 5% auto; }
+    @media (min-width: 1100px) {
+      .contact .logo-bottom {
+        margin: 0; } }
 
 * {
+  overflow: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
@@ -396,12 +549,13 @@ nav {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     width: 100%; } }
 
 @media (min-width: 1100px) {
   .container .navintro {
-    width: 47.5%; } }
+    width: 45%; } }
 
 /*# sourceMappingURL=main.css.map */
