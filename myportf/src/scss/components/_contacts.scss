@@ -3,19 +3,18 @@
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: lightgrey;
     opacity: 1; /* Firefox */
-  }
+}
   
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: lightgrey;
-  }
+}
   
-  ::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder { /* Microsoft Edge */
     color: lightgrey;
-  }
+}
 
 
-.contact {
-    
+.contact { 
     width: 100%;
     height: 15vh;
     background-color: #0e7cd6;
@@ -28,11 +27,13 @@
         margin: auto;
     }
     @include desktop() {
+        width: 70%;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         height: 50vh;
         padding: 5%;
-    }
+    } // -------------------------------------------  <========================
     
     .left { //first, second, email input
         display: flex;
@@ -65,51 +66,64 @@
                     // margin: auto;
                 }
             }
-        }
+    }
         
-        .mid {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            height: 40%;
-            width: 85%;
-            margin: auto;
-            @include desktop() {
-                width: 30%;
-                height: 100%;
-                justify-content: space-around;
-                
-            }
-            .lng-txt {
-                height: 50%;
-                border: none;
-                border-radius: 8px 8px;
-                background-color: #015499;
-                width: 100%;
-                padding: 7px;
-                font-family: $c;
-                color: lightgrey;
-            }
-            .submit-btn {
-                width: 70%;
-                height: 30px;
-                margin: 0 auto 0 auto;
-                border-radius: 10px 10px;
-                border: 2px black solid;
-                background-color: #0e7cd6;
-                font-family: $c;
-                @include desktop() {
-                    font-weight: 700;
-                    margin: 0 auto;
-                }
-            }
-        }
-        .logo-bottom {
-            display: block;
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40%;
+        width: 85%;
+        margin: auto;
+        @include desktop() {
             width: 30%;
-            margin: 0 auto 5% auto;
+            height: 100%;
+            justify-content: space-around;
+            
+        }
+        .lng-txt {
+            height: 50%;
+            border: none;
+            border-radius: 8px 8px;
+            background-color: #015499;
+            width: 100%;
+            padding: 7px;
+            font-family: $c;
+            color: lightgrey;
+        }
+        .submit-btn {
+            width: 70%;
+            height: 30px;
+            margin: 0 auto 0 auto;
+            border-radius: 10px 10px;
+            border: 2px black solid;
+            background-color: #0e7cd6;
+            font-family: $c;
             @include desktop() {
-                margin: 0;
+                font-weight: 700;
+                margin: 0 auto;
             }
         }
     }
+    .logo-bottom {
+        display: block;
+        width: 30%;
+        margin: 0 auto 5% auto;
+        @include desktop() {
+            margin: 0;
+            padding: 8%;
+        }
+    }
+}
+
+.contact.scrolled {
+    @include desktop {
+        @keyframes arrive {
+            from { width: 70%}
+            to {width: 100%}
+        }
+        animation: arrive .5s;
+        width: 100%;
+    }
+}
+

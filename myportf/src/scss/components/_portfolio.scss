@@ -1,18 +1,14 @@
 @import 'fontsColors';
 
 @keyframes slideleft {
-    from {left: 30%; animation-timing-function: ease-in;}
+    from {left: 9%; animation-timing-function: ease-in;}
     30% {left: 0; animation-timing-function: ease-out;}
-    50% {left: 10%; animation-timing-function: ease-in;}
+    50% {left: 3%; animation-timing-function: ease-in;}
     75% {left: 0; animation-timing-function: ease-out;}
-    88% {left: 3%; animation-timing-function: ease-in;}
+    88% {left: 1%; animation-timing-function: ease-in;}
     to {left: 0; animation-timing-function: ease-out;}
 }
-// 100 - 30
-// 40 - 15
-// 
-//
-//
+
 .portfolio {
     overflow: auto;
     width: 100%;
@@ -133,17 +129,17 @@
 
         .one { // FIRST LIs 
             @include desktop() {
-                animation: slideleft 3s;
+                animation: slideleft .5s;
             }
         }
         .two {
             @include desktop() {
-                animation: slideleft 4s;
+                animation: slideleft 1s;
             }
         }
         .tri {
             @include desktop() {
-                animation: slideleft 3.5s; 
+                animation: slideleft .8s; 
             }
 
         }    
