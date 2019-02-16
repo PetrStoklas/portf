@@ -1,11 +1,11 @@
 @import 'fontsColors';
 
 @keyframes slideleft {
-    from {left: 9%; animation-timing-function: ease-in;}
+    from {left: 3%; animation-timing-function: ease-in;}
     30% {left: 0; animation-timing-function: ease-out;}
-    50% {left: 3%; animation-timing-function: ease-in;}
+    50% {left: 1%; animation-timing-function: ease-in;}
     75% {left: 0; animation-timing-function: ease-out;}
-    88% {left: 1%; animation-timing-function: ease-in;}
+    88% {left: .5%; animation-timing-function: ease-in;}
     to {left: 0; animation-timing-function: ease-out;}
 }
 
@@ -24,19 +24,19 @@
     }
 
     h2 { //PORTFOLIO HEADING mobile only
-        @include hs;
-        margin-bottom: 0;
+        @include a;
+        margin-bottom: 5%;
         @include desktop() {
             display: none;
         }
     }
 
-    .arrow { //Mobile only ARROW
-        width: 2%;
-        @include desktop() {
-            display: none;
-        }
-    }
+    // .arrow { //Mobile only ARROW
+    //     width: 2%;
+    //     @include desktop() {
+    //         display: none;
+    //     }
+    // }
 
     ul {
         // padding: 0 10%; 
@@ -59,7 +59,7 @@
                 box-shadow: none;
                 width: 50%;
                 height: 30%;
-                margin: 0 auto;
+                margin: 10% auto;
                 margin-bottom: 1%;
                 padding: 0;
                 
@@ -91,7 +91,14 @@
                 }
             }
 
+            // p {
+            //     width: 90%;
+            //     margin: auto;
+            // }
+
             .overlay {
+                width: 90%;
+                margin: auto;
                 @include desktop() {
                     position: absolute;
                     top: 0;
@@ -105,7 +112,7 @@
             }
 
             a {
-                @include ps;
+                @include as;
                 font-weight: 700;
                 text-decoration: none;
             }
@@ -130,6 +137,7 @@
         .one { // FIRST LIs 
             @include desktop() {
                 animation: slideleft .5s;
+                margin-top: 0;
             }
         }
         .two {

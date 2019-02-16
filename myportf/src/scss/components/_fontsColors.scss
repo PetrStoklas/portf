@@ -30,7 +30,6 @@ $portfolio-color: white;
 $skills-color: blue;
 $contacts-color: black;
 
-$txt-color: black;
 $a-color: black;
 
 //FONTS
@@ -38,70 +37,73 @@ $a-color: black;
 //font-family: 'Open Sans Condensed', sans-serif;
 //font-family: 'Josefin Slab', serif;
 
-$a: 'Courier New', serif;
-$b: 'Open Sans Condensed', sans-serif;
-$c: 'Montserrat', sans-serif;
+$b: 'Aleo', serif;
+$c: 'Open Sans Condensed', sans-serif;
+$a: 'Advent Pro', sans-serif;
+
+$colorOne: #4A9DFD;
+$colorTwo: #214671;
+$colorTri: #3776BD;
+$txt-color: black;
 
 
-// $small: 'Open Sans Condensed', sans-serif;
 
-//font-sizes
-$huge: 21px;
-$big: 19px;
-$med: 18px;
-$smll: 13px;
+// font-family: 'Aleo', serif;
+// font-family: 'Advent Pro', sans-serif;
 
 //font mixins
-@mixin highs() {
+@mixin a() {
+    // font-family: $a;
+    // font-size: 30px;
+    font-weight: 900;
+    color: $colorOne;
+    font-size: 2em;
     font-family: $a;
-    font-size: 19px;
-    font-weight: 900;
-    color: $txt-color;
-    @include tablet () {
-        font-size: 21px;
-    }
-    @include xlarge {
-        font-size: 24px;
-    }
+    // @include tablet () {
+    //     font-size: 21px;
+    // }
+    // @include xlarge {
+    //     font-size: 24px;
+    // }
 }
 
-@mixin hs() {
+@mixin b() {
     font-family: $b;
-    font-size: 21px;
+    font-size: 1em;
     font-weight: 900;
     color: $txt-color;
-    @include tablet () {
-        font-size: 25px;
-    }
-    @include xlarge {
-        font-size: 26px;
-    }
+    // @include tablet () {
+    //     font-size: 10px;
+    // }
+    // @include xlarge {
+    //     font-size: 26px;
+    // }
 }
 
-@mixin ps() {
+@mixin c() {
     font-family: $c;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 500;
-    color: $txt-color;
-    @include tablet () {
-        font-size: 20px;
-    }
-    @include xlarge {
-        font-size: 22px;
-    }
+
+    // @include tablet () {
+    //     font-size: 17px;
+    // }
+    // @include xlarge {
+    //     font-size: 22px;
+    // }
 }
 
 @mixin as() {
-    font-family: $b; 
-    font-size: 13px;
+    font-family: $c; 
+    font-size: 1em;
     font-weight: bold;
     color: $txt-color;
-    @include tablet () {
-        font-size: 15px;
-    }
-    @include xlarge {
-        font-size: 19px;
-    }
+    // @include tablet () {
+    //     font-size: 15px;
+    // }
+    // @include xlarge {
+    //     font-size: 19px;
+    // }
 }
 
 

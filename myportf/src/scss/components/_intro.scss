@@ -2,12 +2,11 @@
 
 @keyframes signal {
     from {background-color: #F8F8F8;;}
-    50% {background-color: #b9defc;}
+    50% {background-color: #c5e1f8;}
     to {background-color: #F8F8F8;}
     // to {background-color: white;}
 }
 
- 
 .intro {
     overflow: auto;
     display: flex;
@@ -36,27 +35,31 @@
         width: 85%;
         margin: auto;
         .first { /// Intro sentence
-            @include highs;
+            @include a;
         }
+
         .second { /// Invitation guiding sentence with links
-            @include ps;
+            @include b;
+            line-height: 19px;
             a {
-                @include ps;
+                @include as;
                 font-weight: bold;
             }
+
             .desk-no-decor {
                 @include desktop() {
+                    // Once 4 and more projects -> turn on
                     font-weight: 300;
                     text-decoration: none;
                 }
             }
         }
+
         .third { /// 3 reasons link
-            @include as;
             a {
                 @include as;
+                font-size: .7em;
             }
-
         }
     }
 }

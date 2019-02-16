@@ -23,10 +23,20 @@ function assetsPublish(done) {
       .pipe(gulp.dest('public'));
 }
 
+function jsPublish(done) {
+    return gulp.src('src/assets/**/*.js')
+    .pipe(gulp.dest('public'));
+}
+
+// function vendorPublish(done) {
+//   return gulp.src('vendor/**')
+//   .pipe(gulp.dest('public'));
+// }
+
 // publish HTML files
 function htmlPublish(done) {
-    return gulp.src('src/assets/**/*.html')
-      .pipe(htmlmin({ collapseWhitespace: true }))
+    return gulp.src('src/assets/**/*.php')
+      .pipe(htmlmin({ collapseWhitespace: true, ignoreCustomFragments: [ /<%[\s\S]*?%>/, /<\?[=|php]?[\s\S]*?\?>/ ] }))
       .pipe(gulp.dest('public'))
       .pipe(livereload());
 }
@@ -48,8 +58,11 @@ function scssCompile(done) {
  
 // watch files
 function watchFiles(done) {
-    gulp.watch("src/assets/**/*.html", htmlPublish);
+    gulp.watch("src/assets/**/*.php", htmlPublish);
     gulp.watch("src/scss/**/*.scss", scssCompile);
+    gulp.watch("src/assets/**/*.js", jsPublish);
+    // gulp.watch("vendor/**", vendorPublish);
+    
 }
 
 // start livereload

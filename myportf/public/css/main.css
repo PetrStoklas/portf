@@ -2,7 +2,7 @@
   from {
     background-color: #F8F8F8; }
   50% {
-    background-color: #b9defc; }
+    background-color: #c5e1f8; }
   to {
     background-color: #F8F8F8; } }
 
@@ -10,7 +10,7 @@
   from {
     background-color: #F8F8F8; }
   50% {
-    background-color: #b9defc; }
+    background-color: #c5e1f8; }
   to {
     background-color: #F8F8F8; } }
 
@@ -56,65 +56,32 @@
     width: 85%;
     margin: auto; }
     .intro .ps .first {
-      font-family: "Courier New", serif;
-      font-size: 19px;
       font-weight: 900;
-      color: black; }
-      @media (min-width: 750px) and (max-width: 1099px) {
-        .intro .ps .first {
-          font-size: 21px; } }
-      @media (min-width: 1500px) {
-        .intro .ps .first {
-          font-size: 24px; } }
+      color: #4A9DFD;
+      font-size: 2em;
+      font-family: "Advent Pro", sans-serif; }
     .intro .ps .second {
-      font-family: "Montserrat", sans-serif;
-      font-size: 18px;
-      font-weight: 500;
-      color: black; }
-      @media (min-width: 750px) and (max-width: 1099px) {
-        .intro .ps .second {
-          font-size: 20px; } }
-      @media (min-width: 1500px) {
-        .intro .ps .second {
-          font-size: 22px; } }
+      font-family: "Aleo", serif;
+      font-size: 1em;
+      font-weight: 900;
+      color: black;
+      line-height: 19px; }
       .intro .ps .second a {
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
         color: black;
         font-weight: bold; }
-        @media (min-width: 750px) and (max-width: 1099px) {
-          .intro .ps .second a {
-            font-size: 20px; } }
-        @media (min-width: 1500px) {
-          .intro .ps .second a {
-            font-size: 22px; } }
       @media (min-width: 1100px) {
         .intro .ps .second .desk-no-decor {
           font-weight: 300;
           text-decoration: none; } }
-    .intro .ps .third {
+    .intro .ps .third a {
       font-family: "Open Sans Condensed", sans-serif;
-      font-size: 13px;
+      font-size: 1em;
       font-weight: bold;
-      color: black; }
-      @media (min-width: 750px) and (max-width: 1099px) {
-        .intro .ps .third {
-          font-size: 15px; } }
-      @media (min-width: 1500px) {
-        .intro .ps .third {
-          font-size: 19px; } }
-      .intro .ps .third a {
-        font-family: "Open Sans Condensed", sans-serif;
-        font-size: 13px;
-        font-weight: bold;
-        color: black; }
-        @media (min-width: 750px) and (max-width: 1099px) {
-          .intro .ps .third a {
-            font-size: 15px; } }
-        @media (min-width: 1500px) {
-          .intro .ps .third a {
-            font-size: 19px; } }
+      color: black;
+      font-size: .7em; }
 
 @-webkit-keyframes swim {
   from {
@@ -191,7 +158,7 @@ nav {
 
 @-webkit-keyframes slideleft {
   from {
-    left: 9%;
+    left: 3%;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   30% {
@@ -199,7 +166,7 @@ nav {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   50% {
-    left: 3%;
+    left: 1%;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   75% {
@@ -207,7 +174,7 @@ nav {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   88% {
-    left: 1%;
+    left: .5%;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   to {
@@ -217,7 +184,7 @@ nav {
 
 @keyframes slideleft {
   from {
-    left: 9%;
+    left: 3%;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   30% {
@@ -225,7 +192,7 @@ nav {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   50% {
-    left: 3%;
+    left: 1%;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   75% {
@@ -233,7 +200,7 @@ nav {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   88% {
-    left: 1%;
+    left: .5%;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   to {
@@ -254,24 +221,13 @@ nav {
       margin-top: 3vh;
       background-color: #F8F8F8; } }
   .portfolio h2 {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 21px;
     font-weight: 900;
-    color: black;
-    margin-bottom: 0; }
-    @media (min-width: 750px) and (max-width: 1099px) {
-      .portfolio h2 {
-        font-size: 25px; } }
-    @media (min-width: 1500px) {
-      .portfolio h2 {
-        font-size: 26px; } }
+    color: #4A9DFD;
+    font-size: 2em;
+    font-family: "Advent Pro", sans-serif;
+    margin-bottom: 5%; }
     @media (min-width: 1100px) {
       .portfolio h2 {
-        display: none; } }
-  .portfolio .arrow {
-    width: 2%; }
-    @media (min-width: 1100px) {
-      .portfolio .arrow {
         display: none; } }
   .portfolio ul {
     list-style: none;
@@ -292,7 +248,7 @@ nav {
           box-shadow: none;
           width: 50%;
           height: 30%;
-          margin: 0 auto;
+          margin: 10% auto;
           margin-bottom: 1%;
           padding: 0; } }
       .portfolio ul li .web-cells {
@@ -316,32 +272,30 @@ nav {
             transition: opacity .3s; }
             .portfolio ul li .web-desks:hover {
               opacity: 0.1; } }
-      @media (min-width: 1100px) {
-        .portfolio ul li .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: #0e7cd6;
-          color: white; } }
+      .portfolio ul li .overlay {
+        width: 90%;
+        margin: auto; }
+        @media (min-width: 1100px) {
+          .portfolio ul li .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0e7cd6;
+            color: white; } }
       .portfolio ul li a {
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
         color: black;
         font-weight: 700;
         text-decoration: none; }
-        @media (min-width: 750px) and (max-width: 1099px) {
-          .portfolio ul li a {
-            font-size: 20px; } }
-        @media (min-width: 1500px) {
-          .portfolio ul li a {
-            font-size: 22px; } }
     @media (min-width: 1100px) {
       .portfolio ul .one {
         -webkit-animation: slideleft .5s;
-        animation: slideleft .5s; } }
+        animation: slideleft .5s;
+        margin-top: 0; } }
     @media (min-width: 1100px) {
       .portfolio ul .two {
         -webkit-animation: slideleft 1s;
@@ -356,7 +310,8 @@ nav {
   @media (min-width: 750px) and (max-width: 1099px) {
     .reasons {
       width: 80%;
-      margin: auto; } }
+      margin: auto;
+      margin-bottom: 10%; } }
   @media (min-width: 1100px) {
     .reasons {
       display: -webkit-box;
@@ -371,40 +326,36 @@ nav {
   .reasons h2 {
     width: 85%;
     text-align: center;
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 21px;
     font-weight: 900;
-    color: black;
+    color: #4A9DFD;
+    font-size: 2em;
+    font-family: "Advent Pro", sans-serif;
     margin: auto;
-    margin-bottom: 5%; }
+    margin-bottom: 17%; }
     @media (min-width: 750px) and (max-width: 1099px) {
       .reasons h2 {
-        font-size: 25px; } }
-    @media (min-width: 1500px) {
-      .reasons h2 {
-        font-size: 26px; } }
+        font-size: 29px; } }
     @media (min-width: 1100px) {
       .reasons h2 {
         width: 100%; } }
   .reasons p {
     margin: 0 auto 5% auto;
     width: 80%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1em;
     font-weight: 500;
-    color: black; }
+    line-height: 1.3em;
+    text-align: justify;
+    text-justify: newspaper; }
     @media (min-width: 750px) and (max-width: 1099px) {
       .reasons p {
-        font-size: 20px; } }
-    @media (min-width: 1500px) {
-      .reasons p {
-        font-size: 22px; } }
-    @media (min-width: 750px) and (max-width: 1099px) {
-      .reasons p {
-        text-align: center; } }
+        text-align: center;
+        width: 100%; } }
     @media (min-width: 1100px) {
       .reasons p {
         width: 22%; } }
+  .reasons .middle-reason {
+    color: #3776BD; }
 
 /* SKILLS KONEC */
 ::-webkit-input-placeholder {
@@ -439,17 +390,17 @@ nav {
 .contact {
   width: 100%;
   height: 15vh;
-  background-color: #0e7cd6;
+  background-color: #254E7D;
   height: 91vh;
   padding-top: 5%;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif; }
   @media (min-width: 750px) and (max-width: 1099px) {
     .contact {
       width: 80%;
       margin: auto; } }
   @media (min-width: 1100px) {
     .contact {
-      width: 70%;
+      width: 95%;
       margin: auto;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -458,7 +409,8 @@ nav {
       -ms-flex-pack: justify;
       justify-content: space-between;
       height: 50vh;
-      padding: 5%; } }
+      padding: 5%;
+      background-color: #254E7D; } }
   .contact .left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -482,8 +434,8 @@ nav {
       border-radius: 8px 8px;
       width: 70%;
       margin: auto;
-      background-color: #015499;
-      font-family: "Montserrat", sans-serif;
+      background-color: #4A9DFD;
+      font-family: "Open Sans Condensed", sans-serif;
       color: lightgrey; }
       @media (min-width: 1100px) {
         .contact .left .name {
@@ -512,10 +464,10 @@ nav {
       height: 50%;
       border: none;
       border-radius: 8px 8px;
-      background-color: #015499;
+      background-color: #4A9DFD;
       width: 100%;
       padding: 7px;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Open Sans Condensed", sans-serif;
       color: lightgrey; }
     .contact .mid .submit-btn {
       width: 70%;
@@ -523,8 +475,8 @@ nav {
       margin: 0 auto 0 auto;
       border-radius: 10px 10px;
       border: 2px black solid;
-      background-color: #0e7cd6;
-      font-family: "Montserrat", sans-serif; }
+      background-color: #4A9DFD;
+      font-family: "Open Sans Condensed", sans-serif; }
       @media (min-width: 1100px) {
         .contact .mid .submit-btn {
           font-weight: 700;
@@ -542,17 +494,22 @@ nav {
   .contact.scrolled {
     -webkit-animation: arrive .5s;
     animation: arrive .5s;
-    width: 100%; }
+    width: 100%;
+    background-color: #0e7cd6; }
   @-webkit-keyframes arrive {
     from {
-      width: 70%; }
+      width: 95%;
+      background-color: #193c58; }
     to {
-      width: 100%; } }
+      width: 100%;
+      background-color: #0e7cd6; } }
   @keyframes arrive {
     from {
-      width: 70%; }
+      width: 95%;
+      background-color: #193c58; }
     to {
-      width: 100%; } } }
+      width: 100%;
+      background-color: #0e7cd6; } } }
 
 * {
   overflow: auto;

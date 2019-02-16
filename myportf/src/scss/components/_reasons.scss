@@ -5,6 +5,7 @@
     @include tablet() {
         width: 80%;
         margin: auto;
+        margin-bottom: 10%;
     }
     @include desktop() {
         display: flex;
@@ -17,9 +18,12 @@
     h2 {
         width: 85%;
         text-align: center;
-        @include hs;
+        @include a;
         margin: auto;
-        margin-bottom: 5% ;
+        margin-bottom: 17% ;
+        @include tablet() {
+            font-size: 29px;
+        }
         @include desktop() {
             // margin-bottom: 5%;
             width: 100%;
@@ -29,9 +33,14 @@
     p {
         margin: 0 auto 5% auto;
         width: 80%;
-        @include ps;
+        @include c;
+        line-height: 1.3em;
+        text-align: justify;
+        text-justify: newspaper;
+
         @include tablet() {
             text-align: center;
+            width: 100%;
         }
         @include desktop() {
             // border-top: black solid 1px;
@@ -39,6 +48,10 @@
             // padding-left: 1%;
             width: 22%;
         }
+    }
+
+    .middle-reason {
+        color:  $colorTri;
     }
 }
 

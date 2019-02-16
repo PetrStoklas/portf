@@ -1,18 +1,17 @@
 const backfin = document.querySelector('#backfin');
 const whole = document.querySelector('.shrk');
+const btn = document.querySelector('.submit-btn');
 let contacts = document.querySelector('.contact');
-console.log(contacts.classList);
+
 
 
 
 const swim = () => {
     backfin.classList.add('backfinswing');
-    console.log('mouseentered');
 }
 
 const stopswim = () => {
     backfin.classList.remove('backfinswing');
-    console.log('mouseleft');
 }
 
 
@@ -24,5 +23,11 @@ window.addEventListener('scroll', () => {
     let offset = window.pageYOffset;
     if (offset > 800) {
         contacts.classList.add('scrolled');
-        console.log(contacts.classList);
-    } })
+    } 
+})
+
+btn.addEventListener('click', (e) => {
+    // btn.style.color = 'white';
+    // e.preventDefault();
+    //kokos
+})
