@@ -1,4 +1,4 @@
-<form class="contact" method ="post">
+<form id="contact" class="contact" method ="post" action="#contact">
 
     <!-- PROVIZORNI KONTAKTY-->
 
@@ -15,12 +15,12 @@
         
         <input class="name" type="text" name="sname" placeholder="  Second Name">
         
-        <input class="name" type="text" name="mail" placeholder="  Your Email">
+        <input class="name" type="mail" name="mail" placeholder="  Your Email">
     </div>
     <div class="mid">
         <textarea class="lng-txt" name="long_text" placeholder="  Type your message here..."></textarea>
         
-        <button class="submit-btn" type="submit">Send Me Message!</button>
+        <button class="submit-btn" type="submit" name="submit">Send Me Message!</button>
     </div>   
     <img src="img/shark-final.svg" alt="#" class="logo-bottom">
     

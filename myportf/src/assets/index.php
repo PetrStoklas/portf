@@ -14,7 +14,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Advent+Pro:500|Aleo:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro:500|Aleo:300" rel="stylesheet">   
     </head>
     <body>
         <div class="container">
@@ -25,7 +25,7 @@
                 <?php require_once 'body/intro.php'; ?>
             </div>
 
-            <div class="portfolio" id=#portfolio> 
+            <div class="portfolio" id="portfolio"> 
                 <!-- portfolio three projects -->
                 <?php require_once 'body/portfolio.php'; ?>
             </div>  
@@ -35,9 +35,16 @@
                 <?php require_once 'body/reasons.php'; ?>
             </div>
         </div>
-        <!-- contact form -->
-        <?php require_once 'body/contact.php'; ?>
+        <div id="contact">
+                <!-- contact form -->
+            <?php require_once 'body/contact.php'; ?>
+        </div>
 
         <script src="script.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous">
+        </script>
     </body>
 </html>

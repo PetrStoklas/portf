@@ -37,6 +37,7 @@ function jsPublish(done) {
 function htmlPublish(done) {
     return gulp.src('src/assets/**/*.php')
       .pipe(htmlmin({ collapseWhitespace: true, ignoreCustomFragments: [ /<%[\s\S]*?%>/, /<\?[=|php]?[\s\S]*?\?>/ ] }))
+      
       .pipe(gulp.dest('public'))
       .pipe(livereload());
 }

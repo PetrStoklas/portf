@@ -17,7 +17,7 @@
 .contact { 
     width: 100%;
     height: 15vh;
-    background-color: #254E7D;
+    background-color: $colorTri;
     height: 91vh;
     padding-top: 5%;
     font-family: $c;
@@ -57,9 +57,12 @@
                 border-radius: 8px 8px;
                 width: 70%;
                 margin: auto;
-                background-color: #4A9DFD;
-                font-family: $c;
+                background-color: $colorOne;
+                // font-family: $c;
                 color: lightgrey;
+                @include tablet() {
+                    height: 40px;
+                }
                 @include desktop() {
                     width: 100%;
                     height: 10%;
@@ -85,10 +88,10 @@
             height: 50%;
             border: none;
             border-radius: 8px 8px;
-            background-color: #4A9DFD;
+            background-color: $colorOne;
             width: 100%;
             padding: 7px;
-            font-family: $c;
+            // font-family: $c;
             color: lightgrey;
         }
         .submit-btn {
@@ -98,8 +101,11 @@
             border-radius: 10px 10px;
             border: 2px black solid;
             // background-color: red;
-            background-color: #4A9DFD;
-            font-family: $c;
+            background-color: $colorTri;
+            // font-family: $c;
+            @include tablet() {
+                height: 40px;
+            }
             @include desktop() {
                 font-weight: 700;
                 margin: 0 auto;
@@ -120,12 +126,12 @@
 .contact.scrolled {
     @include desktop {
         @keyframes arrive {
-            from { width: 95%; background-color: #193c58;  }
-            to {width: 100%; background-color: #0e7cd6; }
+            from { width: 95%; background-color: $colorTwo;  }
+            to {width: 100%; background-color: $colorTri; }
         }
         animation: arrive .5s;
         width: 100%;
-        background-color: #0e7cd6;
+        background-color: $colorTri;
     }
 }
 

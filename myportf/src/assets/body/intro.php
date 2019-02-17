@@ -5,11 +5,11 @@
         </p>
         <br>
         <p class="second">
-        What I love is scuba-diving, skiing and highly functional websites with a clean design. Just check my<a class="desk-no-decor" href="#portfolio"> portfolio </a>and<a href="mailto:petrstoklas@gmail.com?"> contact </a>me so we can start developing your responsive web site. 
+        What I love is scuba-diving, skiing and highly functional websites with a clean design. Just check my<a class="desk-no-decor" href="#portfolio"> portfolio </a>and<a href="#contact"> contact </a>me so we can start developing your responsive web site. 
         </p>
         <br>
         <div class="third">
-            <a href="#"> 3 reasons why to invest into your website </a>
+            <a href="#reasons"> 3 reasons why to invest into your website </a>
         </div>
     </div>  
 </div>

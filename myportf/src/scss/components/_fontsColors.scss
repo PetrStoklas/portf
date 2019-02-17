@@ -19,32 +19,22 @@
     }
 }
 
-// @mixin desktop {
-//     @media (min-width: 950px) {
-//         @content;
-//     }
-// }
 // COLORS
-$nav-color: white;
-$portfolio-color: white;
-$skills-color: blue;
-$contacts-color: black;
 
-$a-color: black;
-
+$colorOne: #4A9DFD; // headings, inputs
+$colorTwo: #214671;
+$colorTri: #3776BD; // contact bg
+$extra-color: black;
 //FONTS
 
 //font-family: 'Open Sans Condensed', sans-serif;
 //font-family: 'Josefin Slab', serif;
 
-$b: 'Aleo', serif;
-$c: 'Open Sans Condensed', sans-serif;
-$a: 'Advent Pro', sans-serif;
+$a: 'Advent Pro', sans-serif;  // i am peter , headings
+$b: 'Aleo', serif; // intro
+$c: 'Open Sans Condensed', sans-serif; // anchors , reasons para, contacts
 
-$colorOne: #4A9DFD;
-$colorTwo: #214671;
-$colorTri: #3776BD;
-$txt-color: black;
+
 
 
 
@@ -52,58 +42,88 @@ $txt-color: black;
 // font-family: 'Advent Pro', sans-serif;
 
 //font mixins
-@mixin a() {
-    // font-family: $a;
-    // font-size: 30px;
+@mixin a() { // I am peter, headings
     font-weight: 900;
     color: $colorOne;
     font-size: 2em;
     font-family: $a;
-    // @include tablet () {
-    //     font-size: 21px;
-    // }
-    // @include xlarge {
-    //     font-size: 24px;
-    // }
+    @include tablet() {
+        font-size: 4em;
+    }
+
+    @include desktop() {
+        font-size: 3em;
+    }
+    @include xlarge {
+        // font-size: 5em;
+    }
 }
 
-@mixin b() {
+@mixin b() { //guiding intro paragraph
     font-family: $b;
     font-size: 1em;
     font-weight: 900;
-    color: $txt-color;
-    // @include tablet () {
-    //     font-size: 10px;
-    // }
+    color: $extra-color;
+    @include tablet() {
+        font-size: 1.8em;
+
+    }
+
+    @include desktop() {
+        font-size: 1.5em;
+    }
     // @include xlarge {
     //     font-size: 26px;
     // }
 }
 
-@mixin c() {
+@mixin c() { // reason paras, 
     font-family: $c;
     font-size: 1em;
     font-weight: 500;
 
-    // @include tablet () {
-    //     font-size: 17px;
-    // }
+    @include tablet() {
+        font-size: 2em;
+    }
+
+    @include desktop() {
+        font-size: 1.6em;
+    }
     // @include xlarge {
     //     font-size: 22px;
     // }
 }
 
-@mixin as() {
+@mixin as() { // 3 reasons link, ..
     font-family: $c; 
     font-size: 1em;
     font-weight: bold;
-    color: $txt-color;
-    // @include tablet () {
-    //     font-size: 15px;
-    // }
+    color: $extra-color;
+    @include tablet () {
+        font-size: 1em;
+    }
+    @include desktop() {
+        font-size: 1em;
+    }
     // @include xlarge {
     //     font-size: 19px;
     // }
 }
+
+@mixin extra() { // project names
+    font-family: $c; 
+    font-size: 1em;
+    font-weight: bold;
+    color: $extra-color;
+    @include tablet () {
+        font-size: 2em;
+        // width: 50%;
+    }
+    // @include xlarge {
+    //     font-size: 19px;
+    // }
+}
+
+
 
 
