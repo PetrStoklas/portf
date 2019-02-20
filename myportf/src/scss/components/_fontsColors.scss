@@ -52,7 +52,7 @@ $c: 'Open Sans Condensed', sans-serif; // anchors , reasons para, contacts
     }
 
     @include desktop() {
-        font-size: 3em;
+        font-size: 4em;
     }
     @include xlarge {
         // font-size: 5em;
@@ -78,9 +78,11 @@ $c: 'Open Sans Condensed', sans-serif; // anchors , reasons para, contacts
 }
 
 @mixin c() { // reason paras, 
-    font-family: $c;
+    font-family: $b;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 300;
+    // line-height: 2em;
+    color: #727173;
 
     @include tablet() {
         font-size: 2em;
@@ -88,6 +90,7 @@ $c: 'Open Sans Condensed', sans-serif; // anchors , reasons para, contacts
 
     @include desktop() {
         font-size: 1.6em;
+
     }
     // @include xlarge {
     //     font-size: 22px;

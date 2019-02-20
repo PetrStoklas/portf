@@ -15,6 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Advent+Pro:500|Aleo:300" rel="stylesheet">   
+        <link rel="shortcut icon" type="image/png" href="img/shark-final.png">
     </head>
     <body>
         <div class="container">

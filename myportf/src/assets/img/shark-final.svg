@@ -10,6 +10,6 @@
 
 <path id="backfin" d="M311.525,240.635l91.88,-19.03l54.77,53.98l-3.71,-64.32l57.05,-205.08l-109.14,197.52l-53.03,-1.17l-37.82,38.1Z" style="fill-opacity:0;fill-rule:nonzero;stroke:#000;stroke-width:3px;"/>
 
-<path id="upfin" d="M223.025,174.665l0,-92.77l-13.79,92.77l13.79,0Z" style="fill-opacity:0;fill-rule:nonzero;stroke:#000;stroke-width:2px;"/>
+<path id="upfin" d="M223.025,174.665l0,-92.77l-13.79,92.77l13.79,0Z" style="fill-opacity:0;fill-rule:nonzero;stroke:white;stroke-width:2px;"/>
 </g>
 </svg>

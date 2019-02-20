@@ -42,6 +42,17 @@ function htmlPublish(done) {
       .pipe(livereload());
 }
 
+// copy images
+// gulp.task('build-images-dev', function() {
+//   return gulp.src('./public/app/images/**/*.{gif,jpg,png,svg}')
+//       .pipe(gulp.dest('dist.dev/images'));
+// });
+
+function imgPublish(done) {
+  return gulp.src('src/assets/img/*.{gif,jpg,png,svg}')
+      .pipe(gulp.dest('public/img'));
+};
+
 // compile SCSS files
 function scssCompile(done) {
     return gulp.src('src/scss/**/*.scss')
@@ -62,6 +73,7 @@ function watchFiles(done) {
     gulp.watch("src/assets/**/*.php", htmlPublish);
     gulp.watch("src/scss/**/*.scss", scssCompile);
     gulp.watch("src/assets/**/*.js", jsPublish);
+    gulp.watch("src/assets/img/*.{gif,jpg,png,svg}", imgPublish);
     // gulp.watch("vendor/**", vendorPublish);
     
 }

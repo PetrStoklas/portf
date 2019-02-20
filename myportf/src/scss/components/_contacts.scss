@@ -64,6 +64,7 @@
                     height: 40px;
                 }
                 @include desktop() {
+                    font-size: 1.2em;
                     width: 100%;
                     height: 10%;
                     // margin: auto;
@@ -91,8 +92,12 @@
             background-color: $colorOne;
             width: 100%;
             padding: 7px;
-            // font-family: $c;
-            color: lightgrey;
+            font-family: $c;
+            // font-size: 1.2em;
+            color: red;
+            @include desktop() {
+                font-size: 1.2em;
+            }
         }
         .submit-btn {
             width: 70%;
@@ -113,12 +118,24 @@
         }
     }
     .logo-bottom {
+        @keyframes swim {
+            from {transform: scaleX(1)}
+            50% {transform: scaleX(-0.7)}
+            to {transform: scaleX(1)}
+        }
+
+        
+
         display: block;
         width: 30%;
         margin: 0 auto 5% auto;
+        fill: none;
+        stroke: darkgray;
+        
         @include desktop() {
             margin: 0;
-            padding: 8%;
+            padding: 4%;
+            
         }
     }
 }

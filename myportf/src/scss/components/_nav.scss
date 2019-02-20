@@ -61,6 +61,7 @@ nav {
     @include desktop() {
         width: 100%;
         margin: auto;
+        padding: 1vh 0;
         // position: static;
     }
 }

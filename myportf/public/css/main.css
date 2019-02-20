@@ -65,7 +65,7 @@
           font-size: 4em; } }
       @media (min-width: 1100px) {
         .intro .ps .first {
-          font-size: 3em; } }
+          font-size: 4em; } }
     .intro .ps .second {
       font-family: "Aleo", serif;
       font-size: 1em;
@@ -180,7 +180,8 @@ nav {
   @media (min-width: 1100px) {
     nav {
       width: 100%;
-      margin: auto; } }
+      margin: auto;
+      padding: 1vh 0; } }
 
 @-webkit-keyframes slideleft {
   from {
@@ -242,9 +243,9 @@ nav {
   @media (min-width: 1100px) {
     .portfolio {
       width: 45%;
-      height: 97vh;
+      height: 99vh;
       padding: 2vh 0 0 0;
-      margin-top: 3vh;
+      margin-top: 1vh;
       background-color: #F8F8F8; } }
   .portfolio h2 {
     font-weight: 900;
@@ -257,13 +258,13 @@ nav {
         font-size: 4em; } }
     @media (min-width: 1100px) {
       .portfolio h2 {
-        font-size: 3em; } }
+        font-size: 4em; } }
     @media (min-width: 1100px) {
       .portfolio h2 {
         display: none; } }
   .portfolio ul {
     list-style: none;
-    padding: 5% 0 0 0; }
+    padding: 6vh 0 0 0; }
     .portfolio ul li {
       position: relative;
       width: 85%;
@@ -278,9 +279,9 @@ nav {
         .portfolio ul li {
           -webkit-box-shadow: none;
           box-shadow: none;
-          width: 50%;
-          height: 30%;
-          margin: 10% auto;
+          height: 27vh;
+          width: 37vh;
+          margin: 5% auto;
           margin-bottom: 1%;
           padding: 0; } }
       .portfolio ul li .web-cells {
@@ -309,13 +310,18 @@ nav {
         margin: auto; }
         @media (min-width: 1100px) {
           .portfolio ul li .overlay {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 27vh;
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #0e7cd6;
-            color: white; } }
+            background-color: #4A9DFD;
+            color: white; }
+            .portfolio ul li .overlay .overlay-text {
+              font-size: 1.2em; } }
       .portfolio ul li a {
         font-family: "Open Sans Condensed", sans-serif;
         font-size: 1em;
@@ -368,24 +374,25 @@ nav {
     font-size: 2em;
     font-family: "Advent Pro", sans-serif;
     margin: auto;
-    margin-bottom: 17%; }
+    margin-bottom: 2em; }
     @media (min-width: 750px) and (max-width: 1099px) {
       .reasons h2 {
         font-size: 4em; } }
     @media (min-width: 1100px) {
       .reasons h2 {
-        font-size: 3em; } }
+        font-size: 4em; } }
     @media (min-width: 1100px) {
       .reasons h2 {
-        margin-bottom: 5%;
+        margin-bottom: 1.8em;
         width: 100%; } }
   .reasons p {
     margin: 0 auto 5% auto;
     width: 80%;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Aleo", serif;
     font-size: 1em;
-    font-weight: 500;
-    line-height: 1.3em;
+    font-weight: 300;
+    color: #727173;
+    line-height: 1.5em;
     text-align: justify;
     text-justify: newspaper; }
     @media (min-width: 750px) and (max-width: 1099px) {
@@ -401,8 +408,6 @@ nav {
     @media (min-width: 1100px) {
       .reasons p {
         width: 22%; } }
-  .reasons .middle-reason {
-    color: #3776BD; }
 
 ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -490,6 +495,7 @@ nav {
           height: 40px; } }
       @media (min-width: 1100px) {
         .contact .left .name {
+          font-size: 1.2em;
           width: 100%;
           height: 10%; } }
   .contact .mid {
@@ -518,7 +524,11 @@ nav {
       background-color: #4A9DFD;
       width: 100%;
       padding: 7px;
-      color: lightgrey; }
+      font-family: "Open Sans Condensed", sans-serif;
+      color: red; }
+      @media (min-width: 1100px) {
+        .contact .mid .lng-txt {
+          font-size: 1.2em; } }
     .contact .mid .submit-btn {
       width: 70%;
       height: 30px;
@@ -536,11 +546,24 @@ nav {
   .contact .logo-bottom {
     display: block;
     width: 30%;
-    margin: 0 auto 5% auto; }
+    margin: 0 auto 5% auto;
+    fill: none;
+    stroke: darkgray; }
+
+@keyframes swim {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    -webkit-transform: scaleX(-0.7);
+    transform: scaleX(-0.7); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
     @media (min-width: 1100px) {
       .contact .logo-bottom {
         margin: 0;
-        padding: 8%; } }
+        padding: 4%; } }
 
 @media (min-width: 1100px) {
   .contact.scrolled {

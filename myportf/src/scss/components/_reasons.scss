@@ -23,10 +23,10 @@
         text-align: center;
         @include a;
         margin: auto;
-        margin-bottom: 17% ;
+        margin-bottom: 2em;
 
         @include desktop() {
-            margin-bottom: 5%;
+            margin-bottom: 1.8em;
             width: 100%;
         }
     }
@@ -35,7 +35,7 @@
         margin: 0 auto 5% auto;
         width: 80%;
         @include c;
-        line-height: 1.3em;
+        line-height: 1.5em;
         text-align: justify;
         text-justify: newspaper;
 
@@ -46,10 +46,6 @@
         @include desktop() {
             width: 22%;
         }
-    }
-
-    .middle-reason {
-        color:  $colorTri;
     }
 }
 
